@@ -1,0 +1,64 @@
+/* Google Fonts Links */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+/* Reset Styles And Google Fonts Links */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Common Styles */
+:root {
+  --btn-color: #e02c6d;
+  --whit-color: #ffffff;
+  --primary-color: #3a3a3a;
+  --secondary-color: #787885;
+  --cardtitle-color: #18191f;
+  --cardsubtitle-color: #5e6366;
+  --fontawesome-color: #fb8200;
+  --feturedtitle-color: #0a0826;
+  --footerbg-color: #0a0826;
+}
+/* Navbar Styles Starts */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+}
+.nav-title {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+nav ul li a:hover {
+  color: #e02c6d;
+}
+/* Navbar Styles Ends */
+/* Responsive Styles */
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-title {
+    margin-bottom: 20px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
