@@ -76,7 +76,7 @@ nav ul li a:hover {
   margin-top: 100px;
 }
 .banner-title {
-  color: #3a3a3a;
+  color: var(--primary-color);
   font-size: 50px;
   font-weight: 700;
 }
@@ -104,6 +104,23 @@ nav ul li a:hover {
 }
 /*  */
 /* Banner Styles Ends */
+/* Sponser Styles Starts */
+.sponser-title{
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sponsor-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+/* Sponser Styles Ends */
 /* Responsive Styles */
 /* Mobile Device */
 @media screen and (max-width: 576px) {
