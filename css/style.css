@@ -192,7 +192,34 @@ nav ul li a:hover {
   font-weight: 500;
 }
 /* Feature Styles Ends */
-/*  */
+/* Footer Styes */
+footer {
+  background-color: #0a0826;
+  padding: 50px 0;
+  color: var(--whit-color);
+  text-align: center;
+}
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.copy {
+  color: #d9dbe1;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.footer-description {
+  color: #d9dbe1;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+footer span {
+  margin-left: 10px;
+  font-size: 20px;
+}
 /* Responsive Styles */
 /* Mobile Device */
 @media screen and (max-width: 576px) {
@@ -223,7 +250,7 @@ nav ul li a:hover {
     grid-template-columns: 1fr;
   }
   .feature-container {
-   flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .feature-img {
     width: 100%;
