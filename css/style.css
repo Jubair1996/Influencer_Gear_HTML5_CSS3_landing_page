@@ -33,6 +33,13 @@
   margin-top: 25px;
   font-weight: 700;
 }
+.title {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
 /* Navbar Styles Starts */
 nav {
   display: flex;
@@ -105,22 +112,87 @@ nav ul li a:hover {
 /*  */
 /* Banner Styles Ends */
 /* Sponser Styles Starts */
-.sponser-title{
-    color: var(--primary-color);
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 30px;
+
+.sponser-title {
+  margin-bottom: 30px;
 }
-.sponsor-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 20px;
+.sponsor-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
 }
 /* Sponser Styles Ends */
+/* Popular Collection Starts */
+.popular-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.popular-card {
+  border-radius: 5px;
+  background: var(--whit-color);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.popular-card img {
+  width: 100%;
+}
+.popular-card-title {
+  color: var(--cardtitle-color);
+  font-size: 28px;
+  font-weight: 500;
+  margin: 6px 0 10px 0;
+}
+.popular-card-subtitle {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.popular-card-description {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+.star {
+  display: flex;
+  gap: 10px;
+}
+.fa-star,
+.fa-star-half-stroke {
+  color: var(--fontawesome-color);
+}
+/* Popular Collection Ends */
+/* Feature Styles Starts */
+.feature-container {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+.feature-img {
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+.feature-text {
+  width: 50%;
+}
+.feature-title {
+  color: #0a0826;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.feature-description {
+  color: #6c6c6c;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* Feature Styles Ends */
+/*  */
 /* Responsive Styles */
 /* Mobile Device */
 @media screen and (max-width: 576px) {
@@ -146,5 +218,20 @@ nav ul li a:hover {
   .banner-img {
     margin-top: 20px;
     width: 100%;
+  }
+  .popular-container {
+    grid-template-columns: 1fr;
+  }
+  .feature-container {
+   flex-direction: column-reverse;
+  }
+  .feature-img {
+    width: 100%;
+  }
+  .feature-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
   }
 }
